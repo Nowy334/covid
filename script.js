@@ -45,11 +45,13 @@ async function getTheCovid(id, search){
 
         for(let i = 0; i < data.infectedByRegion.length; i++){
             let name = changeName(i);
-
-            if(name.indexOf(search) !== -1){
-                lastestUpdate(editingDate);
-                addListItem(data.infectedByRegion[i], i);
+            if(name){
+                if(name.indexOf(search) !== -1){
+                    lastestUpdate(editingDate);
+                    addListItem(data.infectedByRegion[i], i);
+                }
             }
+            
         }
 
     }catch(err){
