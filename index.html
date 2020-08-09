@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class = "box-header">
+            <div class = "text-box">
+                <h1>Śledzenie COVID-19<br><span>w Polsce</span></h1>
+            </div>
+            <a href="#section1"><button class ="btn">Sam zobacz<ion-icon name="arrow-down-outline" class = "icon"></ion-icon></button></a>
+        </div>
+        
+    </header>
+
+    <section id = "section1" class="box-covid">
+        <h2>Statystyki koronawirusa w poszczególnych województwach</h2>
+        <span class = "dataSpan"></span>
+        <!-- <div class = "data">
+            Ostatnia aktualizacja:<br>
+        </div> -->
+        <div class = "wrapper">
+            <div class = "container">
+                <input type = "text" class = "input" placeholder="Jakiego województwa szukasz?">
+                <input type = "button" value ="Search" class = "close-btn">
+            </div>
+        </div>
+        <div class="box-covid-inf">
+
+            <!-- <div class ="box">
+                <div class = "box-name">Lorem ipsum</div>
+                <div class = "box-data">20-19-2000</div>
+                <div class = "box-inf">
+                    <div class = "infectedCount">3000</div>
+                    <div class = "deceasedCount">100</div>
+                </div>
+            </div> -->
+            
+        </div>
+
+    </section>
+    <footer id="footer">
+        <span>&copy Krzysztof Nowak 2020</span>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script src = "https://unpkg.com/ionicons@5.1.2/dist/ionicons.js" > </script>
+</body>
+</html>
