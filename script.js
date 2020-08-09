@@ -45,7 +45,8 @@ async function getTheCovid(id, search){
 
         for(let i = 0; i < data.infectedByRegion.length; i++){
             let name = changeName(i);
-            if(name === search){
+
+            if(name.indexOf(search) !== -1){
                 lastestUpdate(editingDate);
                 addListItem(data.infectedByRegion[i], i);
             }
@@ -89,7 +90,7 @@ function addListItem(obj, i){
         </div>
     </div>`;
 
-    newHtml = html.replace('%name%', region);
+    newHtml = html.replace('%name%', region[0]);
     newHtml = newHtml.replace('%infected%', obj.infectedCount);
     newHtml = newHtml.replace('%deceased%',obj.deceasedCount);
 
